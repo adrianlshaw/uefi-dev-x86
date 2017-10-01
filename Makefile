@@ -3,7 +3,7 @@ LDFLAGS= -nostdlib -znocombreloc -T /usr/lib/elf_x86_64_efi.lds -shared -Bsymbol
 
 docker:
 	docker build -t uefi-app .
-	docker run -v $(PWD):/uefi -ti uefi-app	
+	docker run -v $(shell pwd):/uefi -ti uefi-app
 
 .PHONY: qemu
 qemu: c
