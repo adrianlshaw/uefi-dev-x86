@@ -1,3 +1,4 @@
+# docker build -t uefi .
 FROM ubuntu:16.04
 LABEL maintainer "Adrian L. Shaw <adrian.l.shaw@gmail.com" 
 
